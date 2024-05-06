@@ -1,0 +1,191 @@
+footer {
+    width: 100%;
+    height: auto;
+    background-color: $c2_dark;
+    color: white;
+
+    .info_section {
+        width: 100%;
+        height: 100%;
+
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 4rem 2rem;
+
+            @include flexColumnCenter();
+
+            h4 {
+                font-size: 1.3rem;
+                text-transform: uppercase;
+            }
+
+            .info_items_container {
+                @include flexCenter();
+
+                .row {
+                    position: relative;
+                    @include flexColumnCenter();
+
+                    .item {
+                        position: relative;
+                        margin: 2rem;
+                        @include flexColumnCenter();
+
+                        .icon-box {
+                            width: 5rem;
+                            height: 5rem;
+                            border-radius: 5rem;
+                            background-color: $c1;
+                            margin-bottom: 1.5rem;
+                            // box-shadow: 0 0 1rem .1rem $c1;
+                            @include flexCenter();
+
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                background-color: transparent;
+
+                                i {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-size: 1rem;
+                            background-color: $c2_dark;
+                        }
+                    }
+                }
+
+                .row::before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 15%;
+                    width: .1rem;
+                    height: 60%;
+                    background-color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+
+    .copyrights_container {
+        width: 100%;
+        height: auto;
+        padding: 1rem 0;
+        border-top: .1rem solid rgba(255, 255, 255, 0.3);
+
+        p {
+            font-size: .7rem;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    footer {
+        // width: 100%;
+        // height: auto;
+        // background-color: $c2_dark;
+        // color: white;
+        overflow: hidden;
+
+        .info_section {
+            // width: 100%;
+            // height: 100%;
+
+            .container {
+                // width: 100%;
+                // height: 100%;
+                // padding: 4rem 2rem;
+
+                // @include flexColumnCenter();
+
+                h4 {
+                    font-size: 1.5rem;
+                    // text-transform: uppercase;
+                    margin: 3rem 0;
+                }
+
+                .info_items_container {
+                    // @include flexCenter();
+
+                    .row {
+                        // position: relative;
+                        // @include flexColumnCenter();
+                        flex-direction: row;
+
+                        .item {
+                            width: 8rem;
+                            //     position: relative;
+                            margin: 2rem 8rem;
+                            //     @include flexColumnCenter();
+
+                            .icon-box {
+                                //         width: 5rem;
+                                //         height: 5rem;
+                                //         border-radius: 5rem;
+                                //         background-color: $c1;
+                                //         margin-bottom: 1.5rem;
+                                //         @include flexCenter();
+                                transition: .3s linear;
+
+                                //         a {
+                                //             color: white;
+                                //             text-decoration: none;
+                                //             background-color: transparent;
+
+                                //             i {
+                                //                 font-size: 1.2rem;
+                                //             }
+                                //         }
+                            }
+
+                            .icon-box:hover {
+                                background-color: white;
+
+                                a {
+                                    color: $c1;
+                                }
+                            }
+
+                            //     a {
+                            //         color: white;
+                            //         text-decoration: none;
+                            //         font-size: 1rem;
+                            //         background-color: $c2_dark;
+                            //     }
+                        }
+                    }
+
+                    .row::before {
+                        // content: "";
+                        // position: absolute;
+                        left: 15%;
+                        top: 40%;
+                        width: 70%;
+                        height: .1rem;
+                        // background-color: rgba(255, 255, 255, 0.651);
+                    }
+                }
+            }
+        }
+
+        .copyrights_container {
+            // width: 100%;
+            // height: auto;
+            // padding: 1rem 0;
+            // border-top: .1rem solid rgba(255, 255, 255, 0.3);
+
+            p {
+                font-size: .9rem;
+                // text-align: center;
+            }
+        }
+    }
+}
