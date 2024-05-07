@@ -1,7 +1,7 @@
 const BurgerLines = document.querySelector(".burger-lines-wrap");
 const Menu = document.querySelector(".menu_list");
 const list_li_all = document.querySelectorAll(".list_li");
-let active = false;
+let active = true;
 
 const activeMenu = () => {
     if (active) {
