@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martusia </title>
+    <title>FamilyClean | About </title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
@@ -12,6 +12,16 @@
 </head>
 
 <body>
+    <div class="menu_list">
+        <div class="container_menu_list">
+            <ul class="list">
+                <li class="list_li"><a href="/">Home</a></li>
+                <li class="list_li"><a href="about.html">About</a></li>
+                <li class="list_li"><a href="service.html">Service</a></li>
+                <li class="list_li"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
     <nav>
         <div class="nav_container">
             <div class="nav_section">
@@ -24,7 +34,7 @@
         </div>
         <div class="nav_container no-bg-color">
             <div class="nav_section_bottom">
-                <a class="nav_link" href="">FamilyClean</a>
+                <a class="nav_link" href="/">FamilyClean</a>
             </div>
             <div class="nav_section_bottom">
                 <div class="burger-menu-wrap">
@@ -35,8 +45,8 @@
                 </div>
             </div>
         </div>
-    </nav>
 
+    </nav>
     <article>
 
 
@@ -54,10 +64,7 @@
                                 available, but the majority have suffered alteration in some form, by injected humour,
                                 or randomised
                             </p>
-                            <div class="btn_box">
-                                <div class="btn"> <a href="index.html">Go Back</a></div>
 
-                            </div>
                         </div>
                         <div class="box_image">
                             <div class="img_container">
@@ -65,6 +72,28 @@
                             </div>
                         </div>
                     </div>
+
+                </div>
+                <div class="row">
+                    <div class="box-info">
+                        <div class="box_detail">
+
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration
+                                in some form, by injected humour, or randomisedThere are many variations of passages of
+                                Lorem Ipsum
+                                available, but the majority have suffered alteration in some form, by injected humour,
+                                or randomised
+                            </p>
+                            <div class="btn_box">
+                                <div class="btn"> <a href="/">Go home</a></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
 
 
@@ -72,7 +101,7 @@
         </div>
 
     </article>
-    <footer>
+    <footer id="contact">
         <div class="info_section">
             <div class="container">
                 <h4>Get in touch</h4>
@@ -86,15 +115,16 @@
                         </div>
                         <div class="item">
                             <div class="icon-box">
-                                <a class="icon-a" href=""><i class="fa-solid fa-phone"></i></a>
+                                <a class="icon-a" href="tel:+447877320658"><i class="fa-solid fa-phone"></i></a>
                             </div>
-                            <a href="">07877 320658</a>
+                            <a href="tel:+447877320658">07877 320658</a>
                         </div>
                         <div class="item">
                             <div class="icon-box">
-                                <a class="icon-a" href=""><i class="fa-solid fa-envelope"></i></a>
+                                <a class="icon-a" href="mailto:szelag.marta@gmail.com"><i
+                                        class="fa-solid fa-envelope"></i></a>
                             </div>
-                            <a href="">szelag.marta@gmail.com</a>
+                            <a href="mailto:szelag.marta@gmail.com">szelag.marta@gmail.com</a>
                         </div>
 
                     </div>
@@ -102,10 +132,12 @@
             </div>
         </div>
         <div class="copyrights_container">
-            <p>&copy; 2024 All Rights Reserved By FamilyClean</p>
+            <p>&copy; <span id="displayDateYear"></span> All Rights Reserved By (company Name) <br> <span
+                    class="footer_span_p">Website designed and developed by <a
+                        href="https://www.maciejszelag.co.uk">Maciej Szelag</span></a></p>
         </div>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -190,7 +190,9 @@ p {
         padding: 0 1.5rem;
         @include flexColumnCenterStart();
 
-
+        p {
+            margin-bottom: 3rem;
+        }
 
 
     }
